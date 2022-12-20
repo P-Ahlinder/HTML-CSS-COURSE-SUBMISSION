@@ -1,0 +1,29 @@
+:root {
+  // Colors
+  --color-bg: #fff;
+  --color-bg-alt: #afafaf;
+  --color-text: #242424;
+  --color-text-light: #404040;
+  --color-accent: #ea8a04;
+  --color-accent-dark: #202731;
+  --color-accent-dark-hover: hsl(215, 21%, 20%);
+
+  // Fonts
+  --font-size-xs: 0.75rem;
+  --font-size-s: 1rem;
+  --font-size-ms: 1.25rem;
+  --font-size-m: 2rem;
+  --font-size-l: 3rem;
+  --font-size-xl: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    // Mobile Fonts
+    --multiplier: 0.8;
+
+    --font-size-m: calc(2rem * var(--multiplier));
+    --font-size-l: calc(3rem * var(--multiplier));
+    --font-size-xl: calc(4rem * var(--multiplier));
+  }
+}

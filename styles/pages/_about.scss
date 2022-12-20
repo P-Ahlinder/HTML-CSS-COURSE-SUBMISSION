@@ -1,0 +1,260 @@
+.main-about {
+  --margin-side-lg: 6rem;
+  --padding-side: 1rem;
+  --margin-side: 1rem;
+  --transition-time: 200ms;
+  --box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.15);
+  --section-margin: 4rem;
+  @media screen and (min-width: 992px) {
+    --section-margin: 6rem;
+    --margin-side-lg: 20rem;
+    --padding-side: 4rem;
+  }
+  .container {
+    margin-bottom: var(--section-margin);
+  }
+
+  .hero {
+    background-image: url(../assets/images/pexels-peng-liu-169647.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    padding: calc(var(--section-margin) * 2) 0 12rem 0;
+    margin-bottom: var(--section-margin);
+    height: 40rem;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      h1 {
+        margin-right: auto;
+
+        color: var(--color-bg);
+      }
+      p {
+        margin-left: auto;
+        color: var(--color-bg);
+        font-size: var(--font-size-ms);
+      }
+      .hero-buttons {
+        a:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+      a {
+        max-width: 20rem;
+        margin-inline-end: auto;
+        display: inline-block;
+      }
+    }
+  }
+
+  .hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 22, 22, 0.3);
+    z-index: -1;
+  }
+
+  .we-are-gbgwebdev {
+    .row {
+      gap: 1.5rem;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        padding-top: 1rem;
+      }
+    }
+    video {
+      width: 100%;
+      box-shadow: var(--box-shadow);
+      content: cover;
+      padding: 0;
+      margin-block: auto;
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      button {
+        margin-top: 0.5rem;
+        width: 10rem;
+        margin-left: 1.5rem;
+      }
+      p {
+        margin-left: auto;
+        padding: 1rem;
+        font-size: var(--font-size-sm);
+      }
+      h2,
+      h3 {
+        margin-right: auto;
+      }
+    }
+    .expanded-img {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+
+      img {
+        max-height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: var(--box-shadow);
+      }
+    }
+  }
+  .info {
+    @media screen and (max-width: 768px) {
+      margin: 0.75rem;
+    }
+    margin-top: -1;
+    .row {
+      gap: 1.5rem;
+      flex-direction: column;
+      justify-content: center;
+      .col {
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.323);
+
+        h2 {
+          font-size: 7rem;
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+  .our-workspace {
+    @media screen and (max-width: 768px) {
+      margin: 0.75rem;
+    }
+    
+    background-image: url(/HTML-CSS-Coursework-Submission/assets/images/pexels-olga-neptuna-2078774.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding-top: var(--section-margin);
+    border-radius: 1rem;
+    margin-inline: 1rem;
+    
+
+
+    h3 {
+      color: var(--color-bg);
+      margin-block: 1rem;
+    }
+
+    h2 {
+      color: var(--color-bg);
+      margin-block: 1rem;
+    }
+    p {
+      color: var(--color-bg);
+      font-size: var(--font-size-sm);
+      margin-block: 3rem;
+    }
+    button {
+      margin-bottom: 2rem;
+    }
+  }
+  .our-workspace::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 168, 6, 0.836);
+    z-index: -1;
+    border-radius: 1rem;
+    
+  }
+  .interviews {
+    .col {
+      display: flex;
+      gap: 1.5rem;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        margin-block: 20;
+        max-width: 70rem;
+      }
+    }
+
+    .interviews-gallery {
+      display: flex;
+      width: 100%;
+      gap: 1.5rem;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      .image.wrapper {
+        overflow: hidden;
+      }
+      .header {
+        margin-bottom: 2rem;
+      }
+
+      .card {
+        border-radius: 2rem;
+        box-shadow: var(--box-shadow);
+        width: 100%;
+        border-radius: 0;
+        transition: box-shadow calc(var(--transition-time) * 2) ease-out;
+        &:hover {
+          box-shadow: var(--box-shadow);
+        }
+
+        img {
+          max-height: 20rem;
+          width: 100%;
+          object-fit: cover;
+          transition: transform calc(var(--transition-time) * 2) ease-out;
+        }
+
+        h6 {
+          font-style: italic;
+          font-weight: lighter;
+        }
+        span {
+          font-size: var(--font-size-xs);
+        }
+      }
+    }
+  }
+  .about-form {
+    background-color: rgba(73, 70, 63, 0.262);
+    margin: 1rem;
+    border-radius: 1.5rem;
+    h3,
+    p {
+      margin-top: 2rem;
+    }
+  }
+
+  .fill-out-form {
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    h2,
+    p {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-inline: auto;
+    }
+  }
+}

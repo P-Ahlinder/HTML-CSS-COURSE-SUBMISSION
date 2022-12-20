@@ -1,0 +1,58 @@
+@mixin newsarticle-basestyle {
+  display: flex;
+  padding: 0;
+}
+
+.article-main {
+  display: flex;
+  flex-direction: column;
+  
+  a {
+    text-decoration: none;
+  
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.articleimg-container {
+  @include newsarticle-basestyle();
+  height: 20rem;
+  img {
+    margin-top: 1rem;
+    @include newsarticle-basestyle();
+    object-fit: cover;
+  }
+}
+
+.article-nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    p {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.article-news {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  margin-bottom: 5rem;
+
+  h2  {
+    margin-bottom: 2rem;
+  }
+}
+
+.btn-newslink {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+

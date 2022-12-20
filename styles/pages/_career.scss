@@ -1,0 +1,76 @@
+#windowgirl {
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#worldmap {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#applybtn {
+  margin-top: 1rem;
+  font-size: var(--font-size-s);
+}
+#applybtn:hover {
+  background-color: var(--color-accent);
+  transition: ease-in-out 0.5s;
+}
+
+.career-header {
+  height: 40rem;
+  background-image: linear-gradient(
+      to right bottom,
+      var(--color-accent),
+      rgba(0, 38, 90, 0.5)
+    ),
+    url("/assets/images/pexels-negative-space-169573.jpg");
+
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
+.brand-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.brand {
+  font-size: var(--font-size-xl);
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 7.4px;
+}

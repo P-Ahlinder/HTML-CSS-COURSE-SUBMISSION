@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GBG/WEBDEV | Contact</title>
+    <meta
+      name="description"
+      content="In need of assistance? Contact us for more information regarding our services and products"
+    />
+    <meta
+      name="keywords"
+      content="contact us, support, tech support, it consulting support, sales, salesperson,gbgwebdev support "
+    />
+    <meta name="author" content="GBG\WEBDEV - Daniel Andersson" />
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="https://kit.fontawesome.com/09abedabe6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="../index.html" aria-current="page" title="Go to Home" class="navbar-brand"
+            ><img src="../assets/logo/GWD-logo-cropped.png" alt="GBG/WEBDEV logo"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="services.html" title="Go to Services">Services</a>
+              <a class="nav-link" href="news.html" title="Go to News">News</a>
+              <a class="nav-link" href="career.html" title="Go to Career">Career</a>
+              <a class="nav-link" href="about.html" title="Go to About">About</a>
+              <a class="nav-link" href="contact.html" title="Go to Contact" aria-current="contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="contact-main">
+      <div class="main-content">
+        <h1>Get in Touch</h1>
+        <h3>Don't Hesitate To Connect With Us</h3>
+      </div>
+      <section class="contact-container">
+        <div class="contact-info">
+          <div class="support-item">
+            <i class="fa-solid fa-comments" alt="Chat bubbles icon"></i>
+            <h2>Contact Support</h2>
+            <h4>Need of technical assistance?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur eum repellat quo dolor incidunt
+              qui sapiente dicta harum assumenda.
+            </p>
+          </div>
+          <div class="sales-item">
+            <i class="fa-solid fa-phone" alt="Phone icon"></i>
+            <h2>Salesperson</h2>
+            <h4>Need advice on your next purchase?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, tempore numquam hic laborum iste quae
+              reprehenderit pariatur temporibus, architecto veniam sunt, commodi fugiat ipsam error.
+            </p>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <h2>Message us now!</h2>
+
+          <div class="col">
+            <div class="form-floating mb-5">
+              <input
+                type="text"
+                class="form-control"
+                id="fName"
+                placeholder="First name"
+                aria-label="Enter first name"
+              />
+              <label for="fName">First Name</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-5">
+              <input type="text" class="form-control" id="lName" placeholder="Last name" aria-label="Last name" />
+              <label for="lName">Last Name</label>
+            </div>
+          </div>
+
+          <!-- Email address-->
+          <div class="form-floating mb-5">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="example@example.com"
+              aria-label="Enter Email address"
+            />
+            <label for="email">Mail Address</label>
+          </div>
+          <!-- Category-->
+          <div class="form-floating mb-5">
+            <select class="form-select" id="selectCategory" aria-label="Select category">
+              <option selected>Select option</option>
+              <option value="Support">Support</option>
+              <option value="Sales">Sales</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="selectCategory">Category</label>
+          </div>
+          <!-- Subject-->
+          <div class="form-floating mb-5">
+            <input type="text" class="form-control" id="subject" placeholder="Subject" />
+            <label for="subject">Subject</label>
+          </div>
+          <!-- Message-->
+          <div class="form-floating mb-5">
+            <textarea
+              class="form-control"
+              placeholder="Send a message"
+              id="contact-message"
+              style="height: 100px"
+            ></textarea>
+            <label for="contact-message">Message..</label>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="button-inverse" href="mailto:support@gbgwebdev.com">Submit</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card-contact-information">
+        <div class="contact-mail">
+          <i class="fa-solid fa-envelope" alt="Mail icon"></i>
+          <a href="mailto:support@gbgwebdev.com"
+            ><h3>support@<wbr />gbgwebdev.com</h3></a
+          >
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
+        </div>
+        <div class="contact-office">
+          <i class="fa-solid fa-location-dot" alt="Location icon"></i>
+          <a href="https://goo.gl/maps/cJza7tPEcPPJ6PiN9" target="_blank"><h3>Pumpgatan 1, 417 55 Göteborg</h3></a>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="contact-phone">
+          <i class="fa-solid fa-phone" alt="Phone icon"></i>
+          <a href="tel:+46 123-4567-890"><h3>+46 123-4567-890</h3></a>
+          <p>Lorem ipsum dolor, consectetur adipisicing.</p>
+        </div>
+      </section>
+
+      <section class="container align-center my-5">
+        <div class="questions-and-answers">
+          <h2>Frequently Asked Questions</h2>
+          <div>
+            <img src="../assets/images//Q-A.png" alt="questions and answers" />
+          </div>
+        </div>
+
+        <div class="accordion-bootstrap mt-5">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  What’s my password—I’ve forgotten it. Can you tell me what it is?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  This is question that you’ve probably had to deal with on a regular basis. The answer is no. IT
+                  managers and support staff to not know what your password is. And they should never be willing to tell
+                  you any password via email, over the phone or even in person. This poses a huge security risk and a
+                  possible violation of your company’s IT security policy. If you just can’t remember your password and
+                  need help, then ask the IT support to help you reset your password. You’ll have to create a new
+                  password to replace the one that’s been forgotten.
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Does my phone have a virus?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body">
+                  It is possible for your phone to be infected with a virus. You may notice things such as strange
+                  charges on your phone bill, for things you haven’t done. Your phone’s battery may all of a sudden not
+                  last as long as it used to. You may also notice ads popping up on the phone’s browser. These are all
+                  signs that your phone could be infected. You can avoid some of these viruses with the use of mobile
+                  malware and antivirus applications. These are made for Android phones and others.
+                </div>
+              </div>
+            </article>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  I’ve been receiving calls from Microsoft tech support. Are these real or scams?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  They’re definitely scams. If you receive a call from anyone claiming to be from Microsoft tech
+                  support, hang up right away. Microsoft does not make unsolicited phone calls to fix computer or other
+                  issues. They also will not call and ask for personal or financial information. In addition, they will
+                  not contact you via unsolicited emails. Scammers will call posing as Microsoft reps. They’ll say
+                  something like your computer has a problem, a virus, or missing software, etc. Their goal is to get
+                  your personal and financial information, or to have you download malware onto your device. These are
+                  scam calls—so do not even talk to them, and don’t be polite. Just hang up to avoid accidentally
+                  falling for the scam.
+                </div>
+              </div>
+            </div>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Is Dropbox safe to use?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
+              >
+                <div class="accordion-body">
+                  The short answer is yes! However, any cloud service can come with problems. Dropbox is a powerful tool
+                  used by individuals and businesses every day to back up and store important information. Thankfully
+                  it’s a service that’s backed by a dedicated security team. However, with that said, hackers have begun
+                  playing on the service’s popularity and widespread use. Every so often, they will send out phishing
+                  emails. These are emails that are made to look as if they are from Dropbox. The aim is to steal user
+                  passwords and to infect devices with malware. Dropbox is generally safe; however, be watchful of any
+                  email you receive from the company. Look carefully to see if the email: Asks that you replay with your
+                  username/email and password Contains links—these could be links to fake login pages, where criminals
+                  can steal your username & password Says that you’ve won a prize or a special deal, or claim action is
+                  urgent, etc. These are all signs of a scam. Never click on the link contained in an email that appears
+                  to be suspicious. Instead, go directly to the company’s website and sign in and check for messages.
+                  Another option is to call the company directly, but not using any phone number in the email Instead,
+                  use a phone number listed on the company’s site, then call and see if the email is real or not.
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapsefive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapsefive"
+                >
+                  Do I need to change my password often?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapsefive"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingfive"
+              >
+                <div class="accordion-body">
+                  Yes, it’s necessary in this day and age of hackers and cyberattacks. Regularly changing your password
+                  prevents hackers and others from accessing your private data. It’s also important to avoid using the
+                  same password across numerous services. Using the same password makes it easy for hackers to figure
+                  out what your password is on another service, such as social media, your email, online bill paying and
+                  banking, etc.
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapsesix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapsesix"
+                >
+                  What is the cloud and how does it work?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapsesix"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingsix"
+              >
+                <div class="accordion-body">
+                  Many people are still confused about exactly what the cloud is and how it works. They hear files are
+                  stored in the cloud, but don’t really understand what that means. The cloud is software that runs on
+                  the Internet, rather than your own device. It’s a place that stores data for you including files,
+                  photos, and more. Examples of cloud services include Google Drive, Apple iCloud, Dropbox, Microsoft
+                  Office 365 and more. The cloud makes it easy and fast to access your files and data from any device.
+                  You can upload a file to the cloud service you prefer, and then access it with your phone, etc.
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseseven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseseven"
+                >
+                  Is it safe to use my phone when traveling?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseseven"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingseven"
+              >
+                <div class="accordion-body">
+                  This question may refer to the use of public WiFi and apps on the phone. The answer is a little bit
+                  involved. In short, public WiFi is easily hacked by criminals looking to steal personal data. By using
+                  a public WiFi, you could be exposing data that can access online accounts, making it easy for
+                  criminals to hack your identity. If you must use public WiFi, then be sure to use an excellent paid
+                  VPN (virtual private network) service. Look for VPN providers that don’t keep log files, use strong
+                  encryption to keep your Internet connection private, prevent DNS leakage and more.
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingeight">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseeight"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseeight"
+                >
+                  Are my files safe when I upload them to online websites?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseeight"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingeight"
+              >
+                <div class="accordion-body">
+                  While most websites are safe and legitimate, there are many that are not. You may inadvertently choose
+                  a website that looks valid and real, only to find out your data was stolen after uploading a file. In
+                  addition, if you’d like to save files such as important documents and photos, it’s best to choose a
+                  reliable cloud service, rather than a site such as Facebook, etc. These are some of the most common IT
+                  support questions—we hope the answers have offered some good advice on what to look for in malicious
+                  sites, how to stay safe online and more.
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="sitemap">
+            <h3>Sitemap</h3>
+            <hr />
+            <a class="nav-link" href="../index.html" title="Link to homepage">Home</a>
+            <a class="nav-link" href="services.html" title="Link to services">Services</a>
+            <a class="nav-link" href="news.html" title="Link to news">News</a>
+            <a class="nav-link" href="career.html" title="Link to career">Career</a>
+            <a class="nav-link" href="about.html" title="Link to about">About</a>
+            <a class="nav-link" href="contact.html" title="Link to contact">Contact</a>
+          </div>
+          <div class="sitemap">
+            <h3>Contact</h3>
+            <hr />
+            <p>GBG Webdev</p>
+            <p>
+              Mail to:
+              <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
+            </p>
+          </div>
+          <div class="sitemap">
+            <h3>Follow us</h3>
+            <hr />
+            <a class="nav-link" href="https://linkedin.com/" title="Link to LinkedIn">LinkedIn</a>
+            <a class="nav-link" href="https://facebook.com/" title="Link to Facebook">Facebook</a>
+            <a class="nav-link" href="https://instagram.com/" title="Link to Instagram">Instagram</a>
+            <a class="nav-link" href="https://github.com/" title="Link to Github">Github</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr />
+          <img src="../assets/logo/GWD-logo-cropped-g.png" alt="GBG/WEBDEV logo" />
+          <p>© GBG/WEBDEV</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

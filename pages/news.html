@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GBG WEBDEV</title>
+  <meta name="keywords" content="html,career,jobaplication,developer,göteborg,article,news" />
+  <meta name="description" content="A news page whare you can find the latest from our team" />
+  <meta name="author" content="Group6" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="../index.html" aria-current="page" class="navbar-brand"><img src="../assets/logo/GWD-logo-cropped.png"
+            alt="GBG/WEBDEV logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="news.html" aria-current="news">News</a>
+            <a class="nav-link" href="career.html">Career</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="news-main">
+    <div class="news-hero"
+      alt="A big picture of a book written READ ME on it, next to it you can see a cup of coffe and a can with coffe in it. ">
+      <section class="news-title">
+        <h1>How to expand your viewport!</h1>
+        <hr />
+        <p>With the latest news from us!</p>
+        <hr />
+      </section>
+    </div>
+
+    <div class="container news-search">
+      <form role="search" id="newsform">
+        <input type="text" id="newssearch" class="form-control" name="newssearch" placeholder="Search..."
+          aria-label="Search through site content">
+      </form>
+      <button type="search" class="btn btn-outline-dark">Search</button>
+    </div>
+
+    <div class="container news-container">
+      <div class="card news-card shadow">
+        <a href="news-pages/article-release.html">
+          <div class="zoom">
+            <img src="../assets/images/release3.jpg" class="card-img-top"
+              alt="A blue sky whare you can see baloons flying" />
+          </div>
+          <div class="card-body">
+            <h5>Final week before release!</h5>
+          </div>
+        </a>
+        <time datetime="2022-09-26">2022-09-26</time>
+      </div>
+      
+      <div class="card news-card shadow">
+        <a href="news-pages/article-meetup.html">
+          <div class="zoom">
+            <img src="../assets/images/my-life-through-a-lens-bq31L0jQAjU-unsplash.jpg" class="card-img-top"
+              alt="Picture of a computer standing on a table in a low lighted room." />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">GBG/WEBDEV Meetup!</h5>
+          </div>
+        </a>
+        <time datetime="2022-09-22">2022-09-22</time>
+      </div>
+
+      <div class="card news-card shadow">
+        <a href="news-pages/article-hiring.html">
+          <div class="zoom">
+            <img src="../assets/images/pexels-pixabay-327540.jpg" class="card-img-top"
+              alt="Picture of a computer standing on a table in a low lighted room." />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">WE ARE HIRING!</h5>
+          </div>
+        </a>
+        <time datetime="2022-09-19">2022-09-19</time>
+      </div>
+
+      <!--Load More Funktion ( Old articles )-->
+
+      <div class="collapse" id="collapsnews">
+        <div class="collaps-body">
+          <div class="card news-card shadow">
+            <a href="../pages/news-pages/article-template.html">
+              <div class="zoom">
+                <img src="../assets/images/goodnews.jpg" class="card-img-top"
+                  alt="A poster saying food nes is commin sitting on a post" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Breaking News!</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-19">2022-09-19</time>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapsnews">
+        <div class="collaps-body">
+          <div class="card news-card shadow">
+            <a href="../pages/news-pages/article-template.html">
+              <div class="zoom">
+                <img src="../assets/images/goodnews.jpg" class="card-img-top"
+                  alt="A poster saying food nes is commin sitting on a post" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Breaking News!</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-19">2022-09-19</time>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse" id="collapsnews">
+        <div class="collaps-body">
+          <div class="card news-card shadow">
+            <a href="../pages/news-pages/article-template.html">
+              <div class="zoom">
+                <img src="../assets/images/goodnews.jpg" class="card-img-top"
+                  alt="A poster saying food nes is commin sitting on a post" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Breaking News!</h5>
+              </div>
+            </a>
+            <time datetime="2022-09-19">2022-09-19</time>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container news-subscription">
+      <h3>Newsletter:</h3>
+      <div class="input-group">
+        <div class="form-floating d-flex flex-row">
+          <input type="email" class="form-control" id="email" placeholder="email address" />
+          <label for="email">Your Email Address</label>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="btn-more">
+      <button class="btn btn-inline active collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsnews" aria-expanded="false" aria-pressed="true">
+        Load more GBG/WEBDEV news!
+      </button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="sitemap">
+          <h3>Sitemap</h3>
+          <hr />
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="news.html" aria-current="news">News</a>
+          <a class="nav-link" href="career.html">Career</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+        <div class="sitemap">
+          <h3>Contact</h3>
+          <hr />
+          <p>GBG Webdev</p>
+          <p>
+            Mail to:
+            <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
+          </p>
+        </div>
+        <div class="sitemap">
+          <h3>Follow us</h3>
+          <hr />
+          <a class="nav-link" href="https://linkedin.com/" target="_blank">LinkedIn</a>
+          <a class="nav-link" href="https://facebook.com/" target="_blank">Facebook</a>
+          <a class="nav-link" href="https://instagram.com/" target="_blank">Instagram</a>
+          <a class="nav-link" href="https://github.com/" target="_blank">Github</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <hr />
+        <img src="../assets/logo/GWD-logo-cropped-g.png" alt="GBG/WEBDEV logo" />
+        <p>© GBG/WEBDEV</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--Search script-->
+  <script>
+    const newsform = document.getElementById('newsform');
+    const newssearch = document.getElementById('newssearch');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'gbgwebdev.com';
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + newssearch.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+    newsform.addEventListener('submit', submitted);
+  </script>
+</body>
+
+</html>

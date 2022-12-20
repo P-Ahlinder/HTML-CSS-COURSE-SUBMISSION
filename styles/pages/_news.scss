@@ -1,0 +1,199 @@
+@mixin news-basestyle {
+  display: flex;
+  align-items: center;
+}
+
+.news-main {
+  --article-width: 26.5rem;
+  --border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.news-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid black;
+  }
+
+  button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+  }
+}
+
+@media (min-width: 62rem) {
+  .news-search {
+    justify-content: right;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+
+
+.news-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-image: url(../assets/images/technews.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .news-title {
+    text-align: center;
+
+    hr {
+      max-width: 50rem;
+      margin: auto;
+      color: var(--color-bg);
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      color: var(--color-bg);
+    }
+
+    p {
+      font-style: italic;
+      padding: 0.25rem;
+      color: var(--color-bg);
+    }
+
+  }
+}
+
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 62rem) {
+  .news-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+}
+
+.news-card {
+  border-radius: var(--border-radius);
+  max-width: var(--article-width);
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+
+  .zoom {
+    max-width: var(--article-width);
+    height: 17rem;
+    overflow: hidden;
+
+    img {
+      border-radius: var(--border-radius);
+      max-width: var(--article-width);
+      height: 17rem;
+      transition: 1s all ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+  }
+
+  .card-body {
+    h5 {
+      transition: 0.4s;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+
+  }
+
+  time {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: var(--font-size-xs);
+  }
+}
+
+.news-subscription {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  p {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: end;
+    }
+  }
+
+  form {
+    width: 100%;
+
+    input {
+      border: 3px solid var(--color-accent-dark);
+      box-shadow: none;
+    }
+
+    button {
+      border: 3px solid var(--color-accent-dark);
+      border-left: none;
+
+      &:hover {
+        background-color: var(--color-accent-dark);
+      }
+    }
+  }
+}
+
+.btn-search,
+.btn-more,
+.btn-back {
+  display: flex;
+  padding: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+
+  .btn-inline {
+    border-color: var(--color-accent);
+    border: 3px solid var(--color-accent);
+    color: var(--color-accent);
+
+    &:hover {
+      background-color: var(--color-accent);
+      border: 3px solid var(--color-accent);
+      color: var(--color-bg);
+    }
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GBG/WEBDEV | Services</title>
+  <meta name="keywords" content="Web, system, development" />
+  <meta name="description" content="Web and system development services" />
+  <meta name="author" content="Group 6 - Christopher Andreasson Alm" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="../index.html" aria-current="page" title="About" class="navbar-brand"><img
+            src="../assets/logo/GWD-logo-cropped.png" alt="GBG/WEBDEV logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="this.classList.toggle('open-burger')">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="services.html">Services</a>
+            <a class="nav-link" href="news.html">News</a>
+            <a class="nav-link" href="career.html">Career</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <div class="services-cover">
+      <img src="../assets/images/pexels-lukas-574080.jpg" alt="Hand on computer keyboard with code on the screen">
+      <div class="services-cover-text">
+        <h2>SERVICES</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <section>
+        <h2 class="services-h2">Our services</h2>
+        <div class="services-gallery-container">
+          <div class="services-gallery">
+            <a target="_blank" href="../assets/images/pexels-lukas-590045.jpg">
+              <img src="../assets/images/pexels-lukas-590045.jpg" alt="Paper showing statistics" width="500px"
+                height="500px">
+            </a>
+            <div class="services-gallery-desc">
+              <h5>Analytics</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+
+          <div class="services-gallery">
+            <a target="_blank" href="../assets/images/pexels-pixabay-60504.jpg">
+              <img src="../assets/images/pexels-pixabay-60504.jpg" alt="Computer screen with text that says security"
+                width="500px" height="500px">
+            </a>
+            <div class="services-gallery-desc">
+              <h5>Cybersecurity</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="services-gallery">
+            <a target="_blank" href="../assets/images/pexels-luis-gomes-546819.jpg">
+              <img src="../assets/images/pexels-luis-gomes-546819.jpg" alt="Computer screen showing coding"
+                width="500px" height="500px">
+            </a>
+            <div class="services-gallery-desc">
+              <h5>System development</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="services-gallery">
+            <a target="_blank" href="../assets/images/pexels-deepanker-verma-1482061.jpg">
+              <img src="../assets/images/pexels-deepanker-verma-1482061.jpg"
+                alt="Phone with Google Chrome logo on the screen" width="500px" height="500px" />
+            </a>
+            <div class="services-gallery-desc">
+              <h5>Web development</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="services-h2">How we work</h2>
+        <div class="services-cards-container">
+          <div class="services-cards">
+            <div class="card">
+              <img src="../assets/images/pexels-fauxels-3183183.jpg" class="card-img-top"
+                alt="Photo above a work meeting at a table" width="500px" height="500px" />
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-cards">
+            <div class="card">
+              <img src="../assets/images/pexels-tima-miroshnichenko-5453899.jpg" class="card-img-top"
+                alt="Workers in a office" width="500px" height="500px" />
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-cards">
+            <div class="card">
+              <img src="../assets/images/pexels-buro-millennial-1438072.jpg" class="card-img-top"
+                alt="Three people on a staircase looking at a laptop" width="500px" height="500px" />
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="services-h2">Get our service</h2>
+
+      <form action="mailto:info@gbgwebdev.com">
+        <div class="mb-2">
+          <label for="servicesEmail" class="form-label">Email address:</label>
+          <input type="email" class="form-control" id="servicesEmail">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="servicesAnalytics">
+          <label class="form-check-label" for="servicesAnalytics">Analytics</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="servicesCybersecurity">
+          <label class="form-check-label" for="servicesCybersecurity">Cybersecurity</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="servicesSystem">
+          <label class="form-check-label" for="servicesSystem">System development</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="servicesWeb">
+          <label class="form-check-label" for="servicesWeb">Web development</label>
+        </div>
+        <button class="button-accent" type="submit" class="btn btn-primary">Submit</button>
+        <button class="button-inverse" type="reset" class="btn btn-primary">Reset</button>
+      </form>
+
+      <div class="services-end">
+        <img src="../assets/images/pexels-math-331684.jpg" alt="Laptop on a table infront of white background" />
+        <div class="services-end-text">
+          <h4>Need help?</h4>
+          <a href="contact.html">
+            <button class="button-accent">Contact us</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="sitemap">
+          <h3>Sitemap</h3>
+          <hr />
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="news.html">News</a>
+          <a class="nav-link" href="career.html">Career</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+        <div class="sitemap">
+          <h3>Contact</h3>
+          <hr />
+          <p>GBG Webdev</p>
+          <p>
+            Mail to:
+            <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
+          </p>
+        </div>
+        <div class="sitemap">
+          <h3>Follow us</h3>
+          <hr />
+          <a class="nav-link" href="https://linkedin.com/" target="_blank">LinkedIn</a>
+          <a class="nav-link" href="https://facebook.com/" target="_blank">Facebook</a>
+          <a class="nav-link" href="https://instagram.com/" target="_blank">Instagram</a>
+          <a class="nav-link" href="https://github.com/" target="_blank">Github</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <hr />
+        <img src="../assets/logo/GWD-logo-cropped-g.png" alt="GBG/WEBDEV logo" />
+        <p>© GBG/WEBDEV</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

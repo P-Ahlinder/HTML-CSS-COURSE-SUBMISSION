@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GBG/WEBDEV | Home</title>
+    <meta
+      name="keywords"
+      content="gothenburg, web development, consulting, cloud services, developers, website, business"
+    />
+    <meta
+      name="description"
+      content="Welcome to GBG/WEBDEV. A small web consulting agency based in Gothenburg, Sweden. We will help you realize your vision."
+    />
+    <meta name="author" content="Group 6 - Simon" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html" aria-current="page" title="Go to Home" class="navbar-brand"
+            ><img src="assets/logo/GWD-logo-cropped.png" alt="GBG/WEBDEV logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="pages/services.html">Services</a>
+              <a class="nav-link" href="pages/news.html">News</a>
+              <a class="nav-link" href="pages/career.html">Career</a>
+              <a class="nav-link" href="pages/about.html">About</a>
+              <a class="nav-link" aria-current="page" href="pages/contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="home-main">
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Need a professional looking website?</h1>
+              <p>We've got you covered</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="who-we-are">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="assets/images/home/who.jpg" alt="Laughing office workers" />
+            </div>
+            <article class="col">
+              <h2>WHO WE ARE</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur earum aliquam optio aperiam!
+                Deserunt inventore quae ab praesentium vel et dolore dignissimos reiciendis, similique voluptatibus!
+                Debitis tempora fuga minima quisquam doloremque!
+              </p>
+              <p>
+                Esse placeat tenetur tempora aliquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, veniam.
+              </p>
+              <a href="pages/about.html" title="Go to About"><button class="button-accent">Read more</button></a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="what-we-do">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>WHAT WE DO</h2>
+              <a href="pages/services.html" title="Go to Services" class="row items">
+                <div class="col">
+                  <img src="assets/icons/icon_cart.svg" alt="shopping cart icon" />
+                  <div>
+                    <h3>Online Retail Solutions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <div href="pages/services.html" class="col">
+                  <img src="assets/icons/icon_pencil.svg" alt="pencil icon" />
+                  <div>
+                    <h3>Content Curation</h3>
+                    <p>Asperiores culpa ducimus mollitia in tempora porro, quaerat iusto!</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="assets/icons/icon_settings.svg" alt="cogwheel icon" />
+                  <div>
+                    <h3>Deployment & Maintenance</h3>
+                    <p>Voluptas, quisquam sit amet accusamus.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="assets/icons/icon_envelope.svg" alt="envelope icon" />
+                  <div>
+                    <h3>Email Automation</h3>
+                    <p>Obcaecati reiciendis maiores voluptates perferendis a?</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="assets/icons/icon_browser.svg" alt="web browser icon" />
+                  <div>
+                    <h3>Web Traffic Statistics</h3>
+                    <p>Tempore, hic ab explicabo fugit blanditiis unde obcaecati</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="assets/icons/icon_locked.svg" alt="padlock icon" />
+                  <div>
+                    <h3>Data Security</h3>
+                    <p>Perferendis officiis perspiciatis nostrum suscipit!</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="latest-news">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>WHAT'S HAPPENING</h2>
+              <div class="news-gallery">
+                <a href="pages/news.html" title="Go to News" class="card">
+                  <div class="image-wrapper">
+                    <img src="assets/images/release2.jpg" alt="Balloons flying in the blue sky" />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Final week before release!</p>
+                    <p class="text-small">2022-09-26</p>
+                  </div>
+                </a>
+                <a href="pages/news.html" title="Go to News" class="card">
+                  <div class="image-wrapper">
+                    <img src="assets/images/computer.jpg" alt="Code editor open on MacBook" />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">GBG/WEBDEV Meetup!</p>
+                    <p class="text-small">2022-09-22</p>
+                  </div>
+                </a>
+                <a href="pages/news.html" title="Go to News" class="card">
+                  <div class="image-wrapper">
+                    <img src="assets/images/career.jpg" alt="Man writing on paper between computers" />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">We Are Hiring!</p>
+                    <p class="text-small">2022-09-19</p>
+                  </div>
+                </a>
+              </div>
+              <div class="subscribe">
+                <div>
+                  <p>Subscribe to our</p>
+                  <h3>Newsletter:</h3>
+                </div>
+                <form action="">
+                  <div class="input-group">
+                    <div class="form-floating d-flex flex-row">
+                      <input type="email" class="form-control" id="email" placeholder="email address" />
+                      <label for="email">Your Email Address</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="who-are-you">
+        <div class="container">
+          <div class="row">
+            <article class="col">
+              <h2>WHO ARE YOU?</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla obcaecati modi incidunt corrupti
+                eligendi, esse placeat tenetur tempora aliquam eius. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Omnis ratione autem fugit totam quas. Optio harum id aliquid neque. Sit! Esse placeat tenetur
+                tempora aliquam eius.
+              </p>
+              <div class="double-button">
+                <a href="pages/contact.html" title="Go to Contact">
+                  <button class="button-accent">Get in touch</button>
+                </a>
+                <a href="pages/career.html" title="Go to Career">
+                  <button class="button-inverse">Job listings</button>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="sitemap">
+            <h3>Sitemap</h3>
+            <hr />
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="pages/services.html">Services</a>
+            <a class="nav-link" href="pages/news.html">News</a>
+            <a class="nav-link" href="pages/career.html">Career</a>
+            <a class="nav-link" href="pages/about.html">About</a>
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </div>
+          <div class="sitemap">
+            <h3>Contact</h3>
+            <hr />
+            <p>GBG Webdev</p>
+            <p>
+              Mail to:
+              <a href="mailto:info@gbgwebdev.com">info@gbgwebdev.com</a>
+            </p>
+          </div>
+          <div class="sitemap">
+            <h3>Follow us</h3>
+            <hr />
+            <a class="nav-link" href="https://linkedin.com/">LinkedIn</a>
+            <a class="nav-link" href="https://facebook.com/">Facebook</a>
+            <a class="nav-link" href="https://instagram.com/">Instagram</a>
+            <a class="nav-link" href="https://github.com/">Github</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr />
+          <img src="assets/logo/GWD-logo-cropped-g.png" alt="GBG/WEBDEV logo" />
+          <span> © GBG/WEBDEV</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

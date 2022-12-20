@@ -1,0 +1,38 @@
+// accent button with transparent background that fills in on hover
+.button-accent,
+.button-inverse {
+  --transition-time: 250ms;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  padding: 0.5rem 1.5em;
+  border-radius: 0.5em;
+
+  transition: background-color var(--transition-time) ease-in-out, color var(--transition-time) ease-in-out;
+}
+
+.button-accent {
+  background-color: var(--color-accent);
+  border: 3px solid var(--color-accent);
+  color: var(--color-bg);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg);
+    border: 3px solid var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+
+
+.button-inverse {
+  border: 3px solid var(--color-accent);
+  color: var(--color-accent);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+    border: 3px solid var(--color-accent);
+    color: var(--color-bg);
+  }
+}
